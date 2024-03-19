@@ -2,7 +2,6 @@ import requests
 
 
 def get_money_interval():
-
     # Where USD is the base currency you want to use
     url = 'https://v6.exchangerate-api.com/v6/98a01502c7523d8f777da41b/pair/USD/ILS'
 
@@ -48,3 +47,4 @@ def play(difficulty_choice):
         print(f"Correct the rate is {rate}")
     else:
         print(f"Wrong the rate is {rate} you guessed {user_input}")
+    return result

@@ -2,7 +2,7 @@ import random
 
 
 def generate_number(difficulty_choice):
-    return random.randint(0,difficulty_choice)
+    return random.randint(0, difficulty_choice)
 
 
 def get_guess_from_user(difficulty_choice):
@@ -17,7 +17,6 @@ def get_guess_from_user(difficulty_choice):
             print("Invalid input. Please enter a number.")
 
 
-
 def compare_results(computer, user):
     return computer == user
 
@@ -30,3 +29,4 @@ def play(difficulty_choice):
         print(f"Bullseye generated number is {generated_number}")
     else:
         print(f"Incorrect, generated number is {generated_number}")
+    return result

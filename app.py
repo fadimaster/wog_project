@@ -1,10 +1,12 @@
 from games import memory_game, currency_roulette, guess_game
+from utils.score import add_score
 
 
-#"Welcome to the World of Games" message and Name input
+# "Welcome to the World of Games" message and Name input
 def welcome():
     username = input("Enter Username: ")
     print(f"Hi {username} and welcome to the World of Games: The Epic Journey")
+    return username
 
 
 # Function to validate if input is a number within a specified range
@@ -21,7 +23,7 @@ def get_valid_input(prompt, range_start, range_end):
 
 
 # Choose game and difficulty level
-def start_play():
+def start_play(username):
     print("""
     Please choose a game to play:
     1. Memory Game - a sequence of numbers will appear for a short duration and you have to guess it back
@@ -40,24 +42,30 @@ def start_play():
     """)
     difficulty_choice = get_valid_input("Enter your choice (1-5): ", 1, 5)
 
+    game_won = False
     if game_choice == 1:
-        memory_game.play(difficulty_choice)
+        game_won = memory_game.play(difficulty_choice)
     elif game_choice == 2:
-        guess_game.play(difficulty_choice)
+        game_won = guess_game.play(difficulty_choice)
     elif game_choice == 3:
-        currency_roulette.play(difficulty_choice)
+        game_won = currency_roulette.play(difficulty_choice)
     else:
         print("Error: wrong game choice, please choose game between 1-3")
+
+    if game_won:
+        add_score(username, difficulty_choice)
+
 
 def play_again():
     yes = {'yes', 'y', 'ye', ''}
     no = {'no', 'n'}
 
-    choice = input("Would you like to play again? [y/n]: ").lower()
-    if choice in yes:
-        return True
-    elif choice in no:
-        return False
-    else:
-        print("Please respond with 'yes' or 'no'")
-
+    while True:
+        print("")
+        choice = input("Would you like to play again? [y/n]: ").lower()
+        if choice in yes:
+            return True
+        elif choice in no:
+            return False
+        else:
+            print("Error: Please respond with 'yes' or 'no'")

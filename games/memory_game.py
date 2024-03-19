@@ -1,6 +1,6 @@
 import random
 import time
-from utils import screen_cleaner
+from utils.utils import screen_cleaner
 
 
 def generate_sequence(difficulty_choice):
@@ -40,3 +40,4 @@ def play(difficulty_choice):
         print(f"Awesome Memory!!! sequence was {sequence}")
     else:
         print(f"Wrong, sequence was {sequence}")
+    return result
