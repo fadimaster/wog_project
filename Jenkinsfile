@@ -34,8 +34,7 @@ pipeline {
         stage('Finalize') {
             steps {
                 script {
-                    docker-compose down
-                    docker.push('mydockerhubaccount/my-flask-app')
+                    sh 'docker compose down'
                 }
             }
         }
