@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        docker 'docker'
+        dockerTool 'docker'
     }
     stages {
         stage('Checkout') {
@@ -41,7 +41,7 @@ pipeline {
     }
     post {
         always {
-            // Clean up resources, if needed
+            sh 'docker rmi wog:latest'
         }
     }
 }
