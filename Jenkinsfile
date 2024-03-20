@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    docker build -t wog:latest .
+                    sh 'docker build -t wog:latest .'
                 }
             }
         }
         stage('Run') {
             steps {
                 script {
-                    docker compose up
+                   sh 'docker compose up'
                 }
             }
         }
