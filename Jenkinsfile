@@ -9,14 +9,14 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    docker.build('my-flask-app')
+                    docker build -t wog:latest .
                 }
             }
         }
         stage('Run') {
             steps {
                 script {
-                    docker-compose up -d
+                    docker compose up
                 }
             }
         }
