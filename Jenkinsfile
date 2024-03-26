@@ -34,7 +34,7 @@ pipeline {
         stage('Finalize') {
             steps {
                 script {
-                    sh 'docker compose down'
+                    sh 'docker-compose down'
                 }
             }
         }
