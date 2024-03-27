@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a809bed-d480-49db-8f9c-45bdf38633a7" name="Changes" comment="Jenkinsfile 2">
-      <change afterPath="$PROJECT_DIR$/tests/e2e.py" afterDir="false" />
+    <list default="true" id="3a809bed-d480-49db-8f9c-45bdf38633a7" name="Changes" comment="wog proj final">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
-    <list id="2aa0af42-3e3b-499c-9b5b-803b296abe98" name="New changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
-    </list>
+    <list id="2aa0af42-3e3b-499c-9b5b-803b296abe98" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,24 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "Python.currency_roulette.executor": "Debug",
-    "Python.e2e.executor": "Run",
-    "Python.guess_game.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_score.executor": "Run",
-    "Python.memory_game.executor": "Run",
-    "Python.utils.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/fadim/PycharmProjects/DevopsExperts",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.currency_roulette.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.e2e.executor&quot;: &quot;Run&quot;,
+    &quot;Python.guess_game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_score.executor&quot;: &quot;Run&quot;,
+    &quot;Python.memory_game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fadim/PycharmProjects/DevopsExperts&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fadim\PycharmProjects\DevopsExperts" />
@@ -74,7 +75,7 @@
       <recent name="C:\Users\fadim\PycharmProjects\DevopsExperts\project\games" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="project" />
       <option name="ENV_FILES" value="" />
@@ -333,7 +334,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="flask" />
     <MESSAGE value="Jenkinsfile 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile 2" />
+    <MESSAGE value="wog proj final" />
+    <option name="LAST_COMMIT_MESSAGE" value="wog proj final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

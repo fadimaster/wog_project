@@ -2,7 +2,6 @@ pipeline {
     agent any
     tools {
         dockerTool 'latest'
-        python '3.11'
     }
     stages {
         stage('Checkout') {
