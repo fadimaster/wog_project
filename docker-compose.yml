@@ -3,6 +3,6 @@ services:
   web:
     image: wog:latest
     ports:
-      - "8777:5000"
+      - "5000:5000"
     volumes:
       - ./scores.txt:/scores.txt
