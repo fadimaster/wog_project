@@ -1,7 +1,8 @@
 pipeline {
     agent any
     tools {
-        dockerTool 'docker'
+        dockerTool 'latest'
+        python '3.11'
     }
     stages {
         stage('Checkout') {
@@ -19,15 +20,15 @@ pipeline {
         stage('Run') {
             steps {
                 script {
-                   sh 'docker-compose up'
+                   sh 'docker-compose up -d'
                 }
             }
         }
         stage('Test') {
             steps {
                 script {
-                    // Assuming Python and Selenium are set up in Jenkins environment
-                    sh 'python3 e2e.py'
+                    sh 'pip install -r requirements-test.txt'
+                    sh 'python tests/e2e.py'
                 }
             }
         }
@@ -39,16 +40,10 @@ pipeline {
                 }
             }
         }
-        stage('Finalize') {
-            steps {
-                script {
-                    sh 'docker-compose down'
-                }
-            }
-        }
     }
     post {
         always {
+            sh 'docker-compose down'
             sh 'docker rmi fadimaster/wog:latest'
         }
     }
