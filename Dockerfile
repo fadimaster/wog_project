@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt
 
-COPY ../../../Downloads/wog_project%20 .
+COPY ../Downloads/wog_project%20 .
 
 EXPOSE 5000
 
